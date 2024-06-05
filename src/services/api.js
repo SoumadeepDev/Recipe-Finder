@@ -12,6 +12,7 @@ export const getRecipes = async (searchedQuery) => {
   }
 };
 
+
 export const getRecipe = async (searchedQuery) => {
   try {
     let response = await axios.get(`${API_URL}/get?rId=${searchedQuery}`);
